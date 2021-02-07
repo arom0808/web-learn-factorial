@@ -1,11 +1,12 @@
 function factorial(num){
 	if(num>=-1&&num<=1)
 		return(num);
-	else
-		if (num>0)
-			return(num*factorial(num-BigInt(1)));
-		else
-			return(num*factorial(num+BigInt(1)));
+	else{
+		let res=BigInt(1);
+		for(let i=num;num>0?i>0:i<0;num>0?--i:++i)
+			res*=i;
+		return (res);
+	}
 }
 function numberOfZerosAtTheEnd(num){
 	num=num.toString();
