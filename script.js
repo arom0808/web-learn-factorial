@@ -15,7 +15,6 @@ function numberOfZerosAtTheEnd(num){
 }
 function writeFactorial(){
 	let res=factorial(parseInt(document.getElementById("valueInput").value));
-	console.log(res);
 	document.getElementById("result").innerHTML="result: "+res;
 	document.getElementById("numberOfZerosAtTheEnd").innerHTML=
 		"Number of zeros at the end: "+numberOfZerosAtTheEnd(res);
