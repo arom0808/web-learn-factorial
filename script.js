@@ -3,8 +3,7 @@ function factorial(num){
 		return(num);
 	else{
 		let res=BigInt(1);
-		for(let i=num;num>0?i>0:i<0;num>0?--i:++i)
-			res*=i;
+		for(let i=num;num>0?i>0:i<0;num>0?--i:++i) res*=i;
 		return (res);
 	}
 }
